@@ -1,0 +1,108 @@
+body {
+  background-color: var(--bs-tertiary-bg) !important;
+}
+
+
+.header-bg {
+  background-color: #2870BD;
+  color: white;
+}
+
+.mid-info {
+  background-color: rgba(39, 136, 238, 0.9);
+  color: white;
+  height: 150px;
+  text-align: center;
+}
+
+.mid-info p {
+  font-size: 18px;
+}
+
+.joinUs-bg {
+  background-color: rgba(17, 207, 254, 0.4);
+}
+
+.joinUs-bg>div {
+  padding-right: 80px;
+}
+
+.learn-more-btn {
+  background-color: rgba(0, 64, 116, 1);
+  color: white;
+}
+
+.carousel-item img {
+  height: 450px;
+  /* Adjust height as needed */
+  object-fit: cover;
+  object-position: top;
+}
+
+
+/* ScheduleModal */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.calculator-inputs {
+  flex: 1;
+}
+
+.calculator-results {
+  flex: 1;
+  text-align: left;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-group button {
+  background: #ddd;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.input-group input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
