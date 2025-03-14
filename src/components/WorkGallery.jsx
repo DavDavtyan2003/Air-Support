@@ -2,7 +2,7 @@ import React from 'react'
 
 const WorkGallery = () => {
   return (
-    <div>WorkGalleryyy</div>
+    <div>WorkGalleryy</div>
   )
 }
 
