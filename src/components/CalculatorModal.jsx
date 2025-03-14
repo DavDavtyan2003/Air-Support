@@ -10,38 +10,44 @@ const CalculatorModal = ({ show, handleClose }) => {
         <button className="close-button" onClick={handleClose}>✖</button>
 
         <h3 className="fw-bold text-center">HVAC Load Calculator</h3>
-        
+
         <div className="calculator-container">
           {/* Left Section: Input Fields */}
           <div className="calculator-inputs">
-            <label>Home Square Footage (SQFT)</label>
-            <div className="input-group">
-              <button>-</button>
-              <input type="number" value="5" readOnly />
-              <button>+</button>
+            <div className="input-wrapper">
+              <label>Home Square Footage (SQFT)</label>
+              <div className="input-group">
+                <button className="calc-btn">-</button>
+                <input type="number" value="5" readOnly />
+                <button className="calc-btn">+</button>
+              </div>
             </div>
 
-            <label>Home Ceiling Height (FT)</label>
-            <div className="input-group">
-              <button>-</button>
-              <input type="number" value="6" readOnly />
-              <button>+</button>
+            <div className="input-wrapper">
+              <label>Home Ceiling Height (FT)</label>
+              <div className="input-group">
+                <button className="calc-btn">-</button>
+                <input type="number" value="6" readOnly />
+                <button className="calc-btn">+</button>
+              </div>
             </div>
 
-            <label>Air Changes Per Hour (ACH)</label>
-            <div className="input-group">
-              <button>-</button>
-              <input type="number" value="8" readOnly />
-              <button>+</button>
+            <div className="input-wrapper">
+              <label>Air Changes Per Hour (ACH)</label>
+              <div className="input-group">
+                <button className="calc-btn">-</button>
+                <input type="number" value="8" readOnly />
+                <button className="calc-btn">+</button>
+              </div>
             </div>
           </div>
 
           {/* Right Section: Results */}
           <div className="calculator-results">
             <h5>Results</h5>
-            <p>Room area / 150 SQFT</p>
-            <p>Required CFM / 200CFM</p>
-            <p>Required Ton / 0.37</p>
+            <p>Room area / <strong>150 SQFT</strong></p>
+            <p>Required CFM / <strong>200 CFM</strong></p>
+            <p>Required Ton / <strong>0.37</strong></p>
           </div>
         </div>
       </div>

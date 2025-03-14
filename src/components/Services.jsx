@@ -27,7 +27,7 @@ const Services = () => {
       {servicesData.map((section, index) => (
         <div key={index}>
           <h3 className="fw-bold text-dark pt-4 mb-4">{section.category}</h3>
-          <div className="row g-4">
+          <div className="row g-5">
             {section.services.map((service, i) => (
               <div className="col-md-4" key={i}>
                 <div className="card p-4 shadow-sm border-0 text-center">

@@ -10,7 +10,9 @@ import Touch from './components/Touch';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Services from './components/Services';
+import AboutUs from './components/AboutUs';
 import Contact from './components/Contact'; // Import the new Contact Us page
+import Stats from './components/Stats';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
               <Services />
               <MidInfo />
               <WorkGallery />
+              <AboutUs />
+              <Stats />
               <JoinUs />
               <Reviews />
               <Touch />
