@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import CalculatorModal from "./CalculatorModal"; // Import the calculator modal
 
 const Navbar = () => {
-    const [showCalculator, setShowCalculator] = useState(false); // State to manage modal visibility
+    const [showCalculator, setShowCalculator] = useState(false);
+    const [showSearch, setShowSearch] = useState(false); // State for search input
+    const [searchTerm, setSearchTerm] = useState(""); // State for search input value
 
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container">
                     {/* Logo */}
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand" href="/">
                         <img src="/logo2.svg" alt="Logo" width="238" height="45" />
                     </a>
 
@@ -62,10 +64,23 @@ const Navbar = () => {
                         </ul>
 
                         {/* Search and Calculator - Moved to Right */}
-                        <div className="ms-auto d-flex gap-3">
-                            <button className="btn btn-outline-secondary">
+                        <div className="ms-auto d-flex align-items-center gap-3">
+                            {/* Search Bar */}
+                            {showSearch && (
+                                <input
+                                    type="text"
+                                    className="form-control search-input"
+                                    placeholder="Search..."
+                                    value={searchTerm}
+                                    onChange={(e) => setSearchTerm(e.target.value)}
+                                />
+                            )}
+                            
+                            {/* Search Icon Button */}
+                            <button className="btn btn-outline-secondary" onClick={() => setShowSearch(!showSearch)}>
                                 <i className="fa-solid fa-magnifying-glass"></i>
                             </button>
+
                             {/* Calculator Icon - Opens Modal */}
                             <button className="btn btn-outline-secondary" onClick={() => setShowCalculator(true)}>
                                 <i className="fa-solid fa-calculator"></i>

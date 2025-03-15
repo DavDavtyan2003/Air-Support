@@ -9,6 +9,13 @@ body {
   /* Ensures navbar stays below modal */
 }
 
+/* Search Input Animation */
+.search-input {
+  width: 200px;
+  transition: width 0.3s ease-in-out;
+}
+
+
 /* Header Background */
 .header-bg {
   background-color: #2870BD;
@@ -224,4 +231,12 @@ body {
   margin: auto;
   border-radius: 8px;
   overflow: hidden;
+}
+
+/* WORK GALLERY */
+
+.work-gallery-img {
+  width: 100%; /* Full width of the column */
+  height: 300px; /* Adjust based on your design */
+  object-fit: cover; /* Prevent stretching */
 }
